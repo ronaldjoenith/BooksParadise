@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksparadise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Booksparadise</h1>
+    </div>
+
+    <div class="bookbox">
+        <div class="bookcontainer">
+            <h2>rich dad poor dad</h2>
+            <h5>david warner</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est dolore numquam maxime dolores earum molestias quisquam, explicabo aspernatur veniam et officia exercitationem expedita quis reiciendis voluptatibus, nemo dignissimos commodi?</p>
+            <button onclick="deletecontent(event)">delete</button>
+        </div>
+    </div>
+
+    <div class="popupoverlay"></div>
+    <div class="popup">
+        <h2>Add your favourite book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="booktitleinput">
+            <input type="text" placeholder="Book author" id="bookauthorinput">
+            <textarea placeholder="description" id="bookdescriptioninput"></textarea>
+            <button id="addbook">ADD</button>
+            <button id="cancelpopup">CANCEL</button>
+        </form>
+    </div>
+
+
+
+    <button class="add-button" id="popup-button">+</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
